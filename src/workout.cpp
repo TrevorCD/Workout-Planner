@@ -23,7 +23,7 @@ Muscle::Muscle(std::string name, std::string group)
 	, group_(group)
 {}
 
-Muscle_group::Muscle_group(std::string name)
+MuscleGroup::MuscleGroup(std::string name)
 	: name_(name)
 {}
 Exercise::Exercise(std::string name)

@@ -32,9 +32,9 @@ private:
 	std::string group_;
 };
 
-class Muscle_group {
+class MuscleGroup {
 public:
-	Muscle_group(std::string name);
+	MuscleGroup(std::string name);
 private:
 	std::string name_;
 	std::array<Muscle*> muscles_;
