@@ -39,7 +39,7 @@ public:
 private:
 	std::string name_;
 	std::vector<Muscle*> muscles_; // which muscles are activated
-	std::vector<std::int> amplitudes_; // how much each muscle is activated
+	std::vector<std::int> stimuli_; // how much each muscle is activated
 };
 
 }
