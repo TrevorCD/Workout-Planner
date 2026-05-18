@@ -17,6 +17,13 @@
 
 namespace workout {
 
+class Head {
+public:
+	Head(std::string name);
+private:
+	std::string name_;
+};
+
 class Muscle {
 public:
 	Muscle(std::string name, std::string group);

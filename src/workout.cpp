@@ -14,40 +14,20 @@
 */
 namespace workout {
 
-class Muscle {
-public:
-	Muscle(std::string name, std::string group)
-		: name_(name)
-		, group_(group)
-	{}
-	
-private:
-	std::string name_;
-	std::string group_;
-};
+Head::Head(std::string name)
+	: name_(name)
+{}
 
-class Muscle_group {
-public:
-	Muscle_group(std::string name)
-		: name_(name)
-	{}
+Muscle::Muscle(std::string name, std::string group)
+	: name_(name)
+	, group_(group)
+{}
 
-private:
-	std::string name_;
-	std::array<Muscle*> muscles_;
-	
-};
+Muscle_group::Muscle_group(std::string name)
+	: name_(name)
+{}
+Exercise::Exercise(std::string name)
+	: name_(name)
+{}
 
-class Exercise {
-public:
-	Exercise(std::string name)
-		: name_(name)
-	{}
-	
-private:
-	std::string name_;
-	std::vector<Muscle*> muscles_; // which muscles are activated
-	std::vector<std::int> stimuli_; // how much each muscle is activated
-
-};
 }
